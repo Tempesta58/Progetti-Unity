@@ -1,0 +1,329 @@
+Computer Graphics: 
+Branca dell’informatica che si propone lo sviluppo di tecniche capaci di simulare 
+la realtà che ci circonda attraverso l’uso di software e hardware specifici.
+
+Virtual Reality: 
+Settore della Computer graphics che si propone di visualizzare ambienti ed oggetti 
+3D in real-time offrendo una possibile interazione con essi. Si parla di realtà virtuale immersiva 
+quando la libertà di osservazione e navigazione nella scena, congiunta con speciali dispositivi di 
+visualizzazione e manipolazione, può consentire all’utente una completa astrazione dal contesto reale 
+in cui opera , offrendogli la sensazione di vivere in un mondo virtuale.
+
+CAD(computer aided Design): 
+Modello per la rappresentazione grafica sia 2D che 3D, basato sulla 
+rappresentazione degli oggetti in modo vettoriale , conserva le relazioni spaziali e dimensionali tra 
+le entità geometriche elementari che compongono la scena. Molto usato in campo ingegneristico. 
+L’ingrandimento dell’immagine non comporta un degradamento della visualizzazione, dal momento che le 
+forme sono conservate come forme geometriche.
+
+Raster (Raster=griglia): 
+Modello alternativo per la rappresentazione di una scena in cui le uniche informazioni spaziali 
+disponibili sono quelle relative al colore. Come immagini ottenute tramite fotocamera o scanner. 
+L’immagine chiamata bitmap è un array bidimensionale di informazioni cromatiche, inoltre ha due 
+componenti principali la risoluzione (numero di pixel per area, dimensione dell’array) e la 
+profondità o risoluzione del colore (numero di bit per ogni pixel).
+
+Modellazione Tridimensionale: 
+Processo di produzione di immagini raster a partire da una descrizione geometrica di una scena. 
+Ogni forma tridimensionale è descrivibile attraverso una sua rappresentazione approssimata e discreta 
+basata su un insieme di punti v1, v2, …vn ciascuno avente coordinate vix, viy, viz rispetto ad un dato 
+sistema di riferimento 3D. Questo insieme è connesso in modo tale da formare una superficie poligonale 
+detta mesh, in cui i punti sono i vertici dei poligoni. La risoluzione di una mesh dipende dal livello 
+di approssimazione con cui un certo numero discreto di vertici e poligoni riesce a descrivere una 
+superficie continua.
+
+Rappresentazione Wireframe (fil di ferro): 
+Tipologia di rappresentazione grafica di oggetti 3D, 
+l’oggetto viene descritto solo attraverso i bordi, mentre rimane trasparente all’interno. Mostra solo 
+i lati dei poligoni che compongono l’oggetto. Semplifica di molto i calcoli per la rappresentazione. 
+È tuttora adottata perché consente una completa comprensione della geometria elementare del modello.
+
+Luce: 
+radiazione elettromagnetica con lunghezza d’onda visibile tra i 400nm e i 700nm, può essere vista 
+come un’onda o un fenomeno particellare, dove le particelle che la costituiscono sono i fotoni: 
+contenitori di energia che viaggiano in linea retta nel vuoto a 300.000 Km\s. L’energia è proporzionale 
+al numero di particelle più particelle ci sono più c’è energia. L’energia radiante Φ in un volume V 
+è un flusso visto come la percentuale di energia che fluisce attraverso la superfice per unità di tempo.
+
+Principio di equilibrio del flusso: 
+La distribuzione costante e il movimento delle particelle nel nostro 
+volume creano un equilibrio dinamico dove vale il principio di conservazione dell’energia: ”Tutta 
+l’energia che arriva nel volume è uguale all’energia che esce fuori o che può essere assorbita dai 
+vari corpi presenti ”. Perciò di può costruire l’equazione INPUT=OUTPUT cioè Emission+InScattering=
+Streaming+Outscattering+Absorption, l’integrazione di questa equazione permette la conoscenza di Φ(p, ω)
+flusso di un punto p appartenente al volume V con direzione ω
+Ci sono due tipi di flussi di INPUT: -a emissione (sta all’interno del volume) -a in scattering, 
+deflessione (esterno, esempio luce del sole). Mentre i flussi di OUTPUT sono: -Streaming esce fuori
+senza interagire -Out scattering viene riflessa colpisce oggetti e viene fuori -Absorption assorbimento
+da parte dei singoli oggetti
+
+Radianza: 
+Il flusso di energia emesso da una sorgente per ogni unità di superficie irradiata. Considera l’angolo 
+solido di direzione e l’angolo compreso tra la normale alla superfice e la direzione specificata.
+
+BRDF (Bidirectional reflectance distribuiton function): 
+Funzione di distribuzione che va a calcolare punto per punto come avviene la riflessione.
+
+Quali e quanti tipi di riflessione esistono? 
+-Riflessione perfettamente diffusa= ogni raggio incidente genera un solo raggio riflesso con angolo 
+uguale.
+-Riflessione perfettamente speculare= ogni raggio incidente ha infiniti raggi riflessi in tutte 
+le direzioni in modo uniforme.
+
+Motore grafico: 
+nucleo software di un videogioco o di qualunque applicazione grafica in tempo reale. 
+Frnisce le tecnologie di base, semplifica lo sviluppo, e permette la mobilità su diverse piattaforme. 
+Funzioni Base : motore di rendering per grafica 2D e 3D, motore fisico o rilevatore di collisioni, 
+suono, scripting, animazioni, intelligenza artificiale, networking, scene-graph.
+
+Quali tipologie di motore grafico ci sono? 
+1) Real time: capaci di produrre immagini 3D “al volo”, elaborano minimo a 30Frame per secondo. 
+Si dividono in Motori grafici software usano sola la CPU (vecchi), Motori grafici hardware che si 
+basano su un acceleratore grafico e scheda grafica dedicata. 2) Fotorealistici: capaci di produrre 
+immagini 3D di elevata qualità, quasi inconfondibili con la realtà, impiegano algoritmi complessi 
+ed onerosi, qui il realismo ha priorità sulle performance di calcolo. Applicazioni cinematografiche.
+
+Local Illumination: 
+considera solo le luci che sono posizionate all’interno della scena, a differenza della Global 
+illumination che considera anche quelle esterne.
+
+Ray-tracing: 
+Modello che considera anche la riflessione indiretta, esempio: pareti. Ci sono 4 tipi di riflessione: 
+specular to specular, specular to diffuse, diffuse to specular e diffuse to diffuse.
+
+Ray-Casting: 
+capire quali sono gli oggetti colpiti dal raggio della camera verificando la presenza o meno dell’ 
+intersezione con gli oggetti sulla scena.
+
+General Camera: parametri fondamentali -View Referenfe Point : 
+dove si trova -View Plane Normal: punto di vista, direzione precisa verso cui sta guardando -View Up 
+Vector: direzione sopra/sotto -X Left Hand System
+
+Camere Animate: -Animate VRP (observe cam) si muove con l’osservatore -Animate VPN (look araound) punto
+fisso e mi guardo intorno -Animate TP (track-cam) -Animate COP zoom lungo VPN, orthogonal UPN (mi alzo)
+o Profondità di campo: rappresenta la zona in cui gli oggetti nell'immagine appaiono ancora nitidi e 
+sufficientemente focalizzati, nonostante il piano a fuoco sia uno soltanto. La nitidezza diminuisce 
+gradualmente sui vari piani dell'asse ottico, allontanandosi dal piano focale, in avanti (verso il
+fotografo) e indietro verso l'infinito. Il "campo nitido" è quell'intervallo di distanze davanti e
+ dietro al soggetto a fuoco in cui la sfocatura è impercettibile o comunque ancora tollerabile; la PdC
+  si dice essere maggiore se questo intervallo è ampio e minore se è ridotto.
+
+Modelli di colore: 
+-RGB usato per dispositivi emissivi a led, monitor, TV. È additivo si aggiunge luce al nero 
+-CMYK usato per dispositivi di stampa. È sottrattivo si toglie luce al bianco 
+-HSB (tonalità, saturazione, luminosità) usato per l’elaborazione di immagini 
+-YIQ usato per le trasmissione TV, sfrutta la sensibilità dell’occhio alla luce
+
+Gamut: 
+insieme di colori percepibili dall’occhio umano realizzato dalla combinazione dei 3 colori primari. 
+o Stereoscopia è una tecnica di realizzazione e visione di immagini, disegni, fotografie e filmati, 
+atta a trasmettere una illusione di tridimensionalità, analoga a quella generata dalla visione 
+binoculare del sistema visivo umano. Inventata nel 1832 da sir Charles Wheatstone utilizzando 
+coppie di disegni similari e successivamente la nascente fotografia, la stereoscopia ha trovato 
+successivamente applicazione anche nel cinema e in svariati altri campi coinvolgenti dalla studio 
+scientifico all'intrattenimento, tra cui l'esplorazione astronomica, la fotogrammetria, la televisione, 
+l'informatica, i videogiochi, la telefonia mobile.
+Si basa su due concetti principali: 
+-Convergenza: movimento dei nostri occhi 
+-Accomodazione: modifica della lunghezza focale dell’occhio tramite i muscoli ciliari che assottigliano
+o rilassano il cristallino
+
+Motion Parallax: 
+percezione dei movimenti a seconda della distanza, quelli vicini ci sembrano più rapidi
+di quelli lontani
+
+Condizioni ideali per una corretta visione stereoscopica: 
+-Congruenza : immagine sinistra deve essere uguale a quella di destra 
+-evitare la parallasse verticale -Parallasse ampia , elevata separazione delle due viste 
+-Massima profondità, minore parallasse per minimizzare l’angolo di incrocio, quindi lo sforzo 
+-Cross Talk: si ha quando un’immagine di sinistra arriva all’occhio destro o viceversa, è da evitare. 
+-Maggiore è la distanza di vista dal display maggiore sarà la parallasse tollerabile 
+-evitare che il personaggio esca dalla scena\inquadratura e poi ritorna 
+-minimizzare l’impatto di accomodazione e convergenza
+
+Come funziona la stereoscopia? 
+Due immagini, prese da angolazioni differenti vengono presentate
+ separatamente ai due occhi in modo tale che ogni occhio vede solo l’immagine di sua competenza. 
+ Il cervello attua un processo di fusione delle due immagini elaborate dalla vista che dà 
+ all’osservatore un’illusione di 3D.
+
+Parallasse: 
+angolo formato dai piani di proiezione (proiettati dall’occhio) normali alla direzione 
+di osservazione di ciascun occhio. Maggiore è la parallasse maggiore p la vicinanza del punto osservato
+ e di conseguenza maggiore è lo sforzo per mettere a fuoco.
+
+Stereoscopia Passiva: 
+Le due immagini vengono proiettate contemporaneamente sullo schermo, l’utente indossa degli occhiali 
+che filtrano lo stream video. Abbiamo visto 3 tecniche diverse: gli anaglifi, la polarizzazione della 
+luce e la larghezza di banda del colore.
+
+Stereoscopia Attiva: 
+Le due immagini vengono proiettate in maniera alternata su un medesimo schermo. Con degli occhiali 
+speciali sincronizzati col proiettore oscurano in modo alternato le lenti in modo tale che ciascuna
+immagine sia indirizzata all’occhio di competenza. È richiesta una frequenza di refresh di 60Hz. 
+Effetto molto realistico ma costo troppo elevato.
+
+Anaglifi: 
+immagine speciale ottenuta per sovrapposizione di due fotogrammi di uno stereogramma che subiscono un 
+processo di colorazione distinto, si usa il rosso per la sinistra e e il ciano per la destra. 
+Economici, flessibili però la predominanza di rosso/ciano impatt sulla resa cromatica dell’immagine.
+
+Polarizzazione: 
+usata al cinema. Usa un doppio proiettore le cui lenti sono dotate di filtri polarizzatori, orientati 
+ortogonalmente uno rispetto all’altro, paralleli al piano. Così da proiettare due immagini in modo 
+differente l’uno dall’altra. Lo spettatore ha degli occhiali con lenti polarizzate in modo tale che 
+ogni occhio vede solo ciò che deve vedere. Costi bassi, poca libertà di movimento.
+
+Autostereoscopia: 
+non uso supporti speciali come occhiali, ma sfrutto la libera visione stereoscopica, cioè la capacità 
+innata dell’osservatore di vedere in rilievo uno stereogramma. Se si può contare solo sulla vista 
+possiamo sfruttare due tecniche diverse la visione incrociata e la visione parallela.
+
+Tecniche di visualizzazione autostereoscopica: 
+-Barriera di parallasse: un filtro distribuisce in alternanza i punti di vista distinti all’uno o 
+all’altro occhio -Rete Lenticolare: rete di micro lenti collocata sulla superfice dell’immagine, 
+costituita da immagini ad incastro rappresentanti ognuna un punto di vista preso da un angolo differente
+che il cervello dell’osservatore ricostruirà come unica e in rilievo. 
+-Olografia: un elemento ottico Oleografico è posto davanti allo schermo di visualizzazione, le 
+immagini per i due occhi sono ognuna proiettata da un proiettore LCD e riflesse da uno specchio su 
+uno schermo convesso. La luminosità è importante. -Autostereogramma: è uno stereogramma a singola 
+immagine realizzato per creare un’illusione ottica 3D da un’immagine bidimensionale.
+
+Aptica: 
+scienza che studia il senso del tatto e delle sensazioni con l’ambiente tramite il tatto. 
+INFORMAZIONI APTICHE= INFORMAZONI TATTILI + CINESTETICHE
+
+Livelli aptici: 
+livelli o canali tramite i quali il tatto fornisce informazioni 
+-Livello Cinestetico: senso di posizione e movimento di parti del corpo alle forze associate 
+(afferrare un oggetto). Percezione del movimento e della posizione degli arti avviene attraverso 
+muscoli e tendini. 
+-Livello Tattile: relativo alla cute, tipo di contatto e proprietà fisiche dell’oggetto. Percezioni 
+prodotte da recettori sulla pelle: superfice e temperatura.
+
+Interfacce aptiche: 
+servono ad orientare l’utente sulla posizione e sulla natura degli oggetti nello spazio virtuale, 
+sono spesso Multimodali (parte tattile +uditiva+visiva) . Dispositivi in grado di trasmettere 
+sensazioni di forza o di dare feedback tattile.
+
+Come si distinguono dal punto di vista meccanico le interfacce aptiche? 
+Interfacce ad Impendenza: simulano l’impendenza, una forza uguale e contraria e generano una forza 
+basandosi sulle misure di posizione e velocità Interfacce Mobili: dispositivi mobili con ampio grado 
+di libertà, tipi indossabili
+
+Quali sono i parametri fondamentali che caratterizzano le interfacce aptiche?
+-Numero di gradi di libertà;
+-Dimensione complessiva;
+-Trasparenza, l’armatura non deve pesare all’utente, uso di contrappesi.
+
+Haptic rendering: 
+operazione con la quale si forniscono forza all’utente a partire dalla sua interazione con ambiente 
+virtuale. Ricostruire yutte le forze necessarie per simulare il tocco di un oggetto. Il tatto richiede 
+un refresh di 1000 volte/sec e deve essere sincronizzato con il rendering visuale.
+
+Quali sono le applicazioni dell’aptica? 
+Giochi, medicina, addestramento, riabilitazione, virtual reality.
+
+Dispositivi cinestetici:
+-Finger based;
+-point based;
+-hand based;
+-exoscheleton;
+
+Dispositivi tattili:
+-Termici, rilevamento della temperatura;
+-Vibrotattili, feedback tattile.
+
+Realtà aumentata: è una tecnologia che propone interfaccia di nuova generazione basate sulla realtà e 
+negli ultimi tempi dai laboratori di ricerca si sta spostando sul mercato e su vari contesti industriali. 
+Mette insieme oggetti reali e virtuali in un ambiente reale, crea un allineamento tra oggetti virtuale 
+con quelli reali con lo scopo di rendere indistinguibili i primi dai secondi, è interattiva in 3D e 
+opera in tempo reale.
+
+Tecniche di visualizzazione per la realtà aumentata:
+-Visori video see- through, usano due telecamere per ripredere la realtà una per occhio. L’immagine 
+reale viene fusa con quella di sintesi (aumentata). Avanti ci sono due telecamere e dietro due piccoli 
+scherm; i due flussi video si fondono con l’aumentazione e poi trasmesso all’utente. Complessità ridotta
+ però richiedono sistemi di messa a fuoco automatica, tempi di risposta inferiori a quelli dell’occhio 
+ umano.
+- Visori optical see-through: hanno due lenti traslucide che permettono di vedere la realtà, su queste 
+lenti vengono impresse le informazioni.
+Esempio: google glass; non necessitano di un’opportuna coregistrazione, cioè sovrapposizione perfetta 
+tra le info che mostro e la realtà.
+-Display di proiezione si avvale di sistemi a proiezione per illuminare gli oggetti reali con apposite
+ immagini generate dal computer. Troppo sensibili alla reflettività e alle caratteristiche fisiche degli
+  oggetti illuminati.
+
+Come sono classificati i sistemi di tracking? 
+Parametri di riferimento: Volume di lavoro, frequenza di campionamento, risoluzione, latenza, precisione.
+-Sistemi meccanici: sistemi a bracci che utilizzano potenziometri per misurare la rotazione dei perni di 
+vincolo, semplicità costruttiva meno sensibili ad interferenze, mancanza dell’unità di 
+trasmissione-ricezione, però hanno un volume di lavoro piccolo, le parti in movimento sono soggette 
+ad usura, l’utente è vincolato nei movimenti.
+-Sistemi elettromagnetici: sono costituiti da un trasmettitore ed un ricevitore posto sull’utente, 
+il trasmettitore genera un campo magnetico, la variazione del segnale di campo è tradotta in una 
+variazione di posizione e di orientazione. Piccoli comodi ma soggetti ad interferenze
+ elettromagnetiche, lentezza della risposta 100ms.
+-Sistemi acustici: sfruttano l’effetto doppler un emettitore genera un segnale sonoro e un microfono 
+lo raccoglie misurando l’effetto impiegato dal suono per percorrere il cammino. Economici e facilmente
+ reperibili, però la velocità del suono varia con le condizioni ambientali, non sfruttabile n ambienti
+  che riflettono le onde sonore.
+-Sistemi inerziali: usa i giroscopi per misurare i cambiamenti di rotazione attraverso uno o più assi,
+ non sono necessari sistemi di trasmissione-ricezione, costi elevati, sensibili alla temperatura,
+  necessita di ricalibrazione;
+-Sistemi ottici: caratterizzati da un ‘elevata accuratezza, ma anche da complessità e costo.
+Sorgenti luminose sono disposte sull’oggetto da tracciare e telecamere ne rilevano la posizione. 
+Di solito si usano sorgenti ad infrarossi perché sono invisibili e non disturbano l’utente. 
+L’utente deve
+indossare dei marker. Ha ampia area di lavoro, alta precisione, non applicabili in real time e 
+richiedono continuità del cammino ottico tra proiettore e sensore.
+
+Marker: 
+Sono delle speciali figure che ARTOOLKIT intercetta e traccia all’interno di un flusso video 
+proveniente da una camera. Deve essere facilmente individuabile.
+
+Motion Capture: 
+Nata per esigenze nel campo del virtual humans, cioè la rappresentazione virtuale delle figure umane. 
+Simulazione grafica del corpo (rigido, deformazioni), simulazione fisica del corpo (come si muove) e 
+simulazione del comportamento.
+MOCAP tecnica di aumentazione digitale, permette di applicare a personaggi virtuali i movimenti di 
+persone o animali ripresi in tempo reale e immediatamente riprodotti sullo schermo tramite sensori.
+
+Avatar: 
+Icona o rappresentazione interattiva di un utente in un ambiente condiviso, è un istanza del 
+corpo di un utente nel mondo sintetico.
+
+Agenti: 
+è un virtual humans autonomo le cui azioni non sono guidate da un essere umano ma dal computer.
+
+Skinning: 
+è un algoritmo di deformazione che permette ad una struttura scheletro di muovere una mesh associata
+(skin) in modo continuo.
+Ogni vertice della skin è influenzata da uno o più segmenti (bones) dello scheletro in base ad un
+sistema di pesi.
+
+Quanti tipi di motion capture ci sono ? Ogni tipologia è adeguata ad applicazioni differenti a seconda 
+del risultato che si vuole ottenere.
+- Magnetica: sfrutta sensori applicati al corpo per riportare il movimento dello schermo tramite 
+la misurazione di un campo magnetico a bassa frequenza generato da una fonte trasmittente; c’è un’unità
+ di controllo elettronica che raccoglie i dati. Variazioni legate a fattori ambientali.
+- Ottica:
+- 1) reflective :punti riflettenti;
+- 2) pulsed –led :punti luminosi.
+Entrambe seguono la stessa prassi. I movimenti vengono catturati tramite le telecamere che trasmettono 
+al computer il quale rielabora i movimenti seguendo i punti.
+- Elettromagnetica: più semplice e versatile non necessità di particolari condizioni, usabile anche all’
+aperto ma essendo meccanica la stessa tuta può risultare un vincolo per i movimenti. I movimenti vengono 
+calcolati in base alla resistenza esercitata sulle giunture.
+
+Output device :
+- Visual display;
+- Audio output, localizzazione e sonificazione.
+- Olphactory output;
+- Tactile e haptic output.
+
+Input device :
+- Discrete event, un evento alla volta on/off;
+- Continuous event;
+- Combination devices;
+- Speech input, utili con interazioni multimodali.
