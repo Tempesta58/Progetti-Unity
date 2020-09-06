@@ -1,0 +1,141 @@
+Aptica: 
+scienza che studia il senso del tatto e delle sensazioni con l’ambiente tramite il tatto. 
+INFORMAZIONI APTICHE= INFORMAZONI TATTILI + CINESTETICHE
+
+Livelli aptici: 
+livelli o canali tramite i quali il tatto fornisce informazioni 
+-Livello Cinestetico: senso di posizione e movimento di parti del corpo alle forze associate 
+(afferrare un oggetto). Percezione del movimento e della posizione degli arti avviene attraverso 
+muscoli e tendini. 
+-Livello Tattile: relativo alla cute, tipo di contatto e proprietà fisiche dell’oggetto. Percezioni 
+prodotte da recettori sulla pelle: superfice e temperatura.
+
+Come sono classificati i sistemi di tracking? 
+Parametri di riferimento: Volume di lavoro, frequenza di campionamento, risoluzione, latenza, precisione.
+-Sistemi meccanici: sistemi a bracci che utilizzano potenziometri per misurare la rotazione dei perni di 
+vincolo, semplicità costruttiva meno sensibili ad interferenze, mancanza dell’unità di 
+trasmissione-ricezione, però hanno un volume di lavoro piccolo, le parti in movimento sono soggette 
+ad usura, l’utente è vincolato nei movimenti.
+-Sistemi elettromagnetici: sono costituiti da un trasmettitore ed un ricevitore posto sull’utente, 
+il trasmettitore genera un campo magnetico, la variazione del segnale di campo è tradotta in una 
+variazione di posizione e di orientazione. Piccoli comodi ma soggetti ad interferenze
+ elettromagnetiche, lentezza della risposta 100ms.
+-Sistemi acustici: sfruttano l’effetto doppler un emettitore genera un segnale sonoro e un microfono 
+lo raccoglie misurando l’effetto impiegato dal suono per percorrere il cammino. Economici e facilmente
+ reperibili, però la velocità del suono varia con le condizioni ambientali, non sfruttabile n ambienti
+  che riflettono le onde sonore.
+-Sistemi inerziali: usa i giroscopi per misurare i cambiamenti di rotazione attraverso uno o più assi,
+ non sono necessari sistemi di trasmissione-ricezione, costi elevati, sensibili alla temperatura,
+  necessita di ricalibrazione;
+-Sistemi ottici: caratterizzati da un ‘elevata accuratezza, ma anche da complessità e costo.
+Sorgenti luminose sono disposte sull’oggetto da tracciare e telecamere ne rilevano la posizione. 
+Di solito si usano sorgenti ad infrarossi perché sono invisibili e non disturbano l’utente. 
+L’utente deve
+indossare dei marker. Ha ampia area di lavoro, alta precisione, non applicabili in real time e 
+richiedono continuità del cammino ottico tra proiettore e sensore.
+
+Marker: 
+Sono delle speciali figure che ARTOOLKIT intercetta e traccia all’interno di un flusso video 
+proveniente da una camera. Deve essere facilmente individuabile.
+
+Stereoscopia:
+ è una tecnica di realizzazione e visione di immagini, disegni, fotografie e filmati, 
+atta a trasmettere una illusione di tridimensionalità, analoga a quella generata dalla visione 
+binoculare del sistema visivo umano. 
+Si basa su due concetti principali: 
+-Convergenza: movimento dei nostri occhi 
+-Accomodazione: modifica della lunghezza focale dell’occhio tramite i muscoli ciliari che assottigliano
+o rilassano il cristallino
+
+Stereoscopia Passiva: 
+Le due immagini vengono proiettate contemporaneamente sullo schermo, l’utente indossa degli occhiali 
+che filtrano lo stream video. Abbiamo visto 3 tecniche diverse: gli anaglifi, la polarizzazione della 
+luce e la larghezza di banda del colore.
+
+Anaglifi: 
+immagine speciale ottenuta per sovrapposizione di due fotogrammi di uno stereogramma che subiscono un 
+processo di colorazione distinto, si usa il rosso per la sinistra e e il ciano per la destra. 
+Economici, flessibili però la predominanza di rosso/ciano impatt sulla resa cromatica dell’immagine.
+
+Polarizzazione: 
+usata al cinema. Usa un doppio proiettore le cui lenti sono dotate di filtri polarizzatori, orientati 
+ortogonalmente uno rispetto all’altro, paralleli al piano. Così da proiettare due immagini in modo 
+differente l’uno dall’altra. Lo spettatore ha degli occhiali con lenti polarizzate in modo tale che 
+ogni occhio vede solo ciò che deve vedere. Costi bassi, poca libertà di movimento.
+
+Stereoscopia Attiva: 
+Le due immagini vengono proiettate in maniera alternata su un medesimo schermo. Con degli occhiali 
+speciali sincronizzati col proiettore oscurano in modo alternato le lenti in modo tale che ciascuna
+immagine sia indirizzata all’occhio di competenza. È richiesta una frequenza di refresh di 60Hz. 
+Effetto molto realistico ma costo troppo elevato.
+
+Autostereoscopia: 
+non uso supporti speciali come occhiali, ma sfrutto la libera visione stereoscopica, cioè la capacità 
+innata dell’osservatore di vedere in rilievo uno stereogramma. Se si può contare solo sulla vista 
+possiamo sfruttare due tecniche diverse la visione incrociata e la visione parallela.
+
+Tecniche di visualizzazione autostereoscopica: 
+-Barriera di parallasse: un filtro distribuisce in alternanza i punti di vista distinti all’uno o 
+all’altro occhio -Rete Lenticolare: rete di micro lenti collocata sulla superfice dell’immagine, 
+costituita da immagini ad incastro rappresentanti ognuna un punto di vista preso da un angolo differente
+che il cervello dell’osservatore ricostruirà come unica e in rilievo. 
+-Olografia: un elemento ottico Oleografico è posto davanti allo schermo di visualizzazione, le 
+immagini per i due occhi sono ognuna proiettata da un proiettore LCD e riflesse da uno specchio su 
+uno schermo convesso. La luminosità è importante. -Autostereogramma: è uno stereogramma a singola 
+immagine realizzato per creare un’illusione ottica 3D da un’immagine bidimensionale.
+
+Modelli di colore: 
+-RGB usato per dispositivi emissivi a led, monitor, TV. È additivo si aggiunge luce al nero 
+-CMYK usato per dispositivi di stampa. È sottrattivo si toglie luce al bianco 
+-HSB (tonalità, saturazione, luminosità) usato per l’elaborazione di immagini 
+-YIQ usato per le trasmissione TV, sfrutta la sensibilità dell’occhio alla luce
+
+Gamut: 
+insieme di colori percepibili dall’occhio umano realizzato dalla combinazione dei 3 colori primari. 
+
+Virtual Reality: 
+Settore della Computer graphics che si propone di visualizzare ambienti ed oggetti 
+3D in real-time offrendo una possibile interazione con essi. Si parla di realtà virtuale immersiva 
+quando la libertà di osservazione e navigazione nella scena, congiunta con speciali dispositivi di 
+visualizzazione e manipolazione, può consentire all’utente una completa astrazione dal contesto reale 
+in cui opera , offrendogli la sensazione di vivere in un mondo virtuale.
+
+Realtà aumentata: è una tecnologia che propone interfaccia di nuova generazione basate sulla realtà e 
+negli ultimi tempi dai laboratori di ricerca si sta spostando sul mercato e su vari contesti industriali. 
+Mette insieme oggetti reali e virtuali in un ambiente reale, crea un allineamento tra oggetti virtuale 
+con quelli reali con lo scopo di rendere indistinguibili i primi dai secondi, è interattiva in 3D e 
+opera in tempo reale.
+
+Tecniche di visualizzazione per la realtà aumentata:
+-Visori video see- through, usano due telecamere per ripredere la realtà una per occhio. L’immagine 
+reale viene fusa con quella di sintesi (aumentata). Avanti ci sono due telecamere e dietro due piccoli 
+scherm; i due flussi video si fondono con l’aumentazione e poi trasmesso all’utente. Complessità ridotta
+ però richiedono sistemi di messa a fuoco automatica, tempi di risposta inferiori a quelli dell’occhio 
+ umano.
+- Visori optical see-through: hanno due lenti traslucide che permettono di vedere la realtà, su queste 
+lenti vengono impresse le informazioni.
+Esempio: google glass; non necessitano di un’opportuna coregistrazione, cioè sovrapposizione perfetta 
+tra le info che mostro e la realtà.
+-Display di proiezione si avvale di sistemi a proiezione per illuminare gli oggetti reali con apposite
+ immagini generate dal computer. Troppo sensibili alla reflettività e alle caratteristiche fisiche degli
+  oggetti illuminati.
+
+  Interfacce aptiche: 
+servono ad orientare l’utente sulla posizione e sulla natura degli oggetti nello spazio virtuale, 
+sono spesso Multimodali (parte tattile +uditiva+visiva) . Dispositivi in grado di trasmettere 
+sensazioni di forza o di dare feedback tattile.
+
+Come si distinguono dal punto di vista meccanico le interfacce aptiche? 
+Interfacce ad Impendenza: simulano l’impendenza, una forza uguale e contraria e generano una forza 
+basandosi sulle misure di posizione e velocità 
+Interfacce Mobili: dispositivi mobili con ampio grado 
+di libertà, tipi indossabili
+
+Aptica: 
+scienza che studia il senso del tatto e delle sensazioni con l’ambiente tramite il tatto. 
+INFORMAZIONI APTICHE= INFORMAZONI TATTILI + CINESTETICHE
+
+Haptic rendering: 
+operazione con la quale si forniscono forza all’utente a partire dalla sua interazione con ambiente 
+virtuale. Ricostruire yutte le forze necessarie per simulare il tocco di un oggetto. Il tatto richiede 
+un refresh di 1000 volte/sec e deve essere sincronizzato con il rendering visuale.

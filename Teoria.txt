@@ -116,13 +116,11 @@ Modelli di colore:
 
 Gamut: 
 insieme di colori percepibili dall’occhio umano realizzato dalla combinazione dei 3 colori primari. 
-o Stereoscopia è una tecnica di realizzazione e visione di immagini, disegni, fotografie e filmati, 
+
+Stereoscopia:
+ è una tecnica di realizzazione e visione di immagini, disegni, fotografie e filmati, 
 atta a trasmettere una illusione di tridimensionalità, analoga a quella generata dalla visione 
-binoculare del sistema visivo umano. Inventata nel 1832 da sir Charles Wheatstone utilizzando 
-coppie di disegni similari e successivamente la nascente fotografia, la stereoscopia ha trovato 
-successivamente applicazione anche nel cinema e in svariati altri campi coinvolgenti dalla studio 
-scientifico all'intrattenimento, tra cui l'esplorazione astronomica, la fotogrammetria, la televisione, 
-l'informatica, i videogiochi, la telefonia mobile.
+binoculare del sistema visivo umano. 
 Si basa su due concetti principali: 
 -Convergenza: movimento dei nostri occhi 
 -Accomodazione: modifica della lunghezza focale dell’occhio tramite i muscoli ciliari che assottigliano
@@ -143,25 +141,19 @@ Condizioni ideali per una corretta visione stereoscopica:
 
 Come funziona la stereoscopia? 
 Due immagini, prese da angolazioni differenti vengono presentate
- separatamente ai due occhi in modo tale che ogni occhio vede solo l’immagine di sua competenza. 
- Il cervello attua un processo di fusione delle due immagini elaborate dalla vista che dà 
- all’osservatore un’illusione di 3D.
+separatamente ai due occhi in modo tale che ogni occhio vede solo l’immagine di sua competenza. 
+Il cervello attua un processo di fusione delle due immagini elaborate dalla vista che dà 
+all’osservatore un’illusione di 3D.
 
 Parallasse: 
 angolo formato dai piani di proiezione (proiettati dall’occhio) normali alla direzione 
 di osservazione di ciascun occhio. Maggiore è la parallasse maggiore p la vicinanza del punto osservato
- e di conseguenza maggiore è lo sforzo per mettere a fuoco.
+e di conseguenza maggiore è lo sforzo per mettere a fuoco.
 
 Stereoscopia Passiva: 
 Le due immagini vengono proiettate contemporaneamente sullo schermo, l’utente indossa degli occhiali 
 che filtrano lo stream video. Abbiamo visto 3 tecniche diverse: gli anaglifi, la polarizzazione della 
 luce e la larghezza di banda del colore.
-
-Stereoscopia Attiva: 
-Le due immagini vengono proiettate in maniera alternata su un medesimo schermo. Con degli occhiali 
-speciali sincronizzati col proiettore oscurano in modo alternato le lenti in modo tale che ciascuna
-immagine sia indirizzata all’occhio di competenza. È richiesta una frequenza di refresh di 60Hz. 
-Effetto molto realistico ma costo troppo elevato.
 
 Anaglifi: 
 immagine speciale ottenuta per sovrapposizione di due fotogrammi di uno stereogramma che subiscono un 
@@ -173,6 +165,12 @@ usata al cinema. Usa un doppio proiettore le cui lenti sono dotate di filtri pol
 ortogonalmente uno rispetto all’altro, paralleli al piano. Così da proiettare due immagini in modo 
 differente l’uno dall’altra. Lo spettatore ha degli occhiali con lenti polarizzate in modo tale che 
 ogni occhio vede solo ciò che deve vedere. Costi bassi, poca libertà di movimento.
+
+Stereoscopia Attiva: 
+Le due immagini vengono proiettate in maniera alternata su un medesimo schermo. Con degli occhiali 
+speciali sincronizzati col proiettore oscurano in modo alternato le lenti in modo tale che ciascuna
+immagine sia indirizzata all’occhio di competenza. È richiesta una frequenza di refresh di 60Hz. 
+Effetto molto realistico ma costo troppo elevato.
 
 Autostereoscopia: 
 non uso supporti speciali come occhiali, ma sfrutto la libera visione stereoscopica, cioè la capacità 
@@ -208,7 +206,8 @@ sensazioni di forza o di dare feedback tattile.
 
 Come si distinguono dal punto di vista meccanico le interfacce aptiche? 
 Interfacce ad Impendenza: simulano l’impendenza, una forza uguale e contraria e generano una forza 
-basandosi sulle misure di posizione e velocità Interfacce Mobili: dispositivi mobili con ampio grado 
+basandosi sulle misure di posizione e velocità 
+Interfacce Mobili: dispositivi mobili con ampio grado 
 di libertà, tipi indossabili
 
 Quali sono i parametri fondamentali che caratterizzano le interfacce aptiche?

@@ -29,7 +29,7 @@ public class Punteggio : MonoBehaviour
             punteggio++;
             flag = 1;
         }
-        gui.text = "Ghiaccio cauto = " + punteggio;
+        gui.text = "Ghiaccio caduto = " + punteggio;
 
     }
 }
